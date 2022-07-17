@@ -1,0 +1,79 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/form.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>PRACTICE FORM</h1>
+      <p>Please fill out this form</p>
+    </header>
+    <form action="https://formspree.io/f/mdobqodr" method="POST">
+      <fieldset>
+        <label for="first"
+          >First name: <input required type="text" name="First" id="first"
+        /></label>
+        <label for="last"
+          >Last name: <input required type="text" id="last" name="Last"
+        /></label>
+        <label for="email"
+          >Email: <input required type="email" name="Email" id="email"
+        /></label>
+        <label for="password"
+          >Password:
+          <input required type="password" name="Password" id="password"
+        /></label>
+      </fieldset>
+      <fieldset>
+        <label for="personal"
+          ><input type="radio" name="acc-type" id="personal" value="Personal" />
+          Personal Account</label
+        >
+        <label for="business"
+          ><input type="radio" name="acc-type" id="business" value="Business" />
+          Business Account</label
+        >
+        <br />
+        <label for="terms"
+          ><input type="checkbox" name="Terms" id="terms" /> I have read the
+          <a href="https://youtu.be/dQw4w9WgXcQ">terms and conditions</a></label
+        >
+      </fieldset>
+      <fieldset>
+        <label for="pic"
+          >Upload your profile<input type="file" name="Pic" id="pic"
+        /></label>
+        <label for="age"
+          >Provide us your age:
+          <input type="number" required name="Age" id="age" min="13" max="120"
+        /></label>
+        <label for="select"
+          >Why us?:
+          <select required name="Why-us" id="select">
+            <option value="">Select</option>
+            <option value="Youtube">Youtube</option>
+            <option value="Tiktok">Tiktok</option>
+            <option value="Reddit">Reddit</option>
+            <option value="other">Other</option>
+          </select>
+        </label>
+      </fieldset>
+      <label for="bio"
+        >Provide us with 2-4 traits:
+        <textarea
+          name="Bio"
+          id="bio"
+          cols="30"
+          rows="2"
+          required
+          placeholder="I like the beach..."
+          maxlength="300"
+        ></textarea>
+      </label>
+      <input type="submit" value="Submit" id="submit" />
+    </form>
+  </body>
+</html>
